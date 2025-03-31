@@ -60,7 +60,7 @@ input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-div.ambiguous-case {
+div.newtons-method {
     width: 90%; /* Adjust width to fit nicely */
     max-width: 400px;
 }

@@ -60,7 +60,24 @@ input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-div.ambiguous-case {
+div.title {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    grid-column: 1 / -1; /* Span across all columns */
+    width: 100%;
+    text-align: center;
+}
+
+div.title h1 {
+    margin: 0;
+}
+
+div.herons-formula,
+div.ambiguous-case,
+div.newtons-formula,
+div.polynomial-functions {
     width: 90%; /* Adjust width to fit nicely */
     max-width: 400px;
 }
