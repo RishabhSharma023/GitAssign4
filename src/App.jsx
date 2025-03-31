@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import { useState } from 'react'
 import './App.css'
 
-function App() {
+/*function App() {
   const [count, setCount] = useState(0)
 
   return (
@@ -33,3 +34,27 @@ function App() {
 }
 
 export default App
+*/
+
+import React from 'react';
+import HeronsFormula from './HeronsFormula';
+import AmbiguousCase from './AmbiguousCase';
+import NewtonsMethod from './NewtonsMethod';
+import PolynomialFunction from './PolynomialFunction';
+
+const App = () => {
+    return (
+        <div>
+            <h1>Heron's Formula</h1>
+            <HeronsFormula />
+            <h1>Ambiguous Case</h1>
+            <AmbiguousCase />
+            <h1>Newton's Method</h1>
+            <NewtonsMethod />
+            <h1>Polynomial Function</h1>
+            <PolynomialFunction />
+        </div>
+    );
+};
+
+export default App;
