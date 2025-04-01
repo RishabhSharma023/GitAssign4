@@ -1,24 +1,49 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
+  margin:0;
   padding: 0;
   background-color: #f4f4f9;
   color: #333;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Full viewport height */
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: flex-start; 
+  height: 100vh; 
+}
+
+.title {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  margin-left: 40px;
+}
+
+.title h1 {
+  margin: 0;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-  grid-template-rows: repeat(2, 1fr); /* Two equal rows */
-  gap: 20px; /* Space between grid items */
-  width: 90vw; /* Take up 90% of the viewport width */
-  height: 90vh; /* Take up 90% of the viewport height */
-  justify-items: center;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, 1fr); 
+  gap: 20px; 
+  width: 90vw; 
+  height: 100%; 
+  justify-content: center; 
+  align-items: center; 
+  margin-left: 10%; 
+}
+
+.grid-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center; 
+  width: 100%; 
 }
 
 h1, h2 {
@@ -67,24 +92,11 @@ input[type="submit"]:hover {
   background-color: #0056b3;
 }
 
-div.title {
-  background-color: #007bff;
-  color: white;
-  padding: 20px 0;
-  margin-bottom: 20px;
-  text-align: center;
-  width: 100%;
-}
-
-div.title h1 {
-  margin: 0;
-}
-
 div.herons-formula,
 div.ambiguous-case,
 div.newtons-method,
 div.polynomial-functions {
-  width: 100%; /* Adjust width to fit nicely */
+  width: 100%; 
   max-width: 400px;
 }
 
